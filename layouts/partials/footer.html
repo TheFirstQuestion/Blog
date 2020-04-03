@@ -1,0 +1,10 @@
+<div class="child-borders">
+    <p class="sm col border-dotted border-thick">
+        {{ with .PrevInSection }}
+           <span class="previous"> Previous: <a href="{{.Permalink}}">{{.Title}}</a></span>
+        {{ end }}
+        {{ with .NextInSection }}
+          <span class="next"> Next: <a href="{{.Permalink}}">{{.Title}}</a></span>
+        {{ end }}
+    </p>
+</div>

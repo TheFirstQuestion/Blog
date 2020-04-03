@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Reenie+Beanie&family=Special+Elite&family=Sue+Ellen+Francisco&display=swap');
+
+
+/* base */
+body {
+  background-image: url('{{ "img/wallpaper.jpg" | absURL }}');
+  font-size: 30px;
+}
+
+/* anchors */
+a,
+a:visited {
+  color: rgb(0, 0, 238);
+  background-image: none;
+  text-decoration: underline;
+}
+
+/* navbar */
+nav a,
+nav a:visited {
+  color: #41403e;
+  text-decoration: none;
+}
+
+/* post list */
+
+.summary {
+  margin-bottom: 0.1em;
+}
+
+/* post single */
+.post-title {
+  margin-bottom: 0.1em;
+}
+
+/* toc */
+.toc {
+  padding: 1em;
+  margin-top: 1em;
+}
+.toc h2 {
+  font-size: 1.3em;
+}
+
+
+aside {
+    float: right;
+    text-align: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.next {
+    float: right;
+}
+
+blockquote {
+    font-family: "Special Elite", "sans-serif";
+    font-size: 20px;
+}
+
+.note {
+    font-family: "Reenie Beanie", "serif";
+}

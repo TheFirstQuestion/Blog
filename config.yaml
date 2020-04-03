@@ -1,0 +1,63 @@
+baseURL: blog.sophieopferman.com
+languageCode: en-us
+defaultContentLanguage: en
+title: Blog!
+theme: papercss-hugo-theme
+enableRobotsTXT: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+imaging:
+  quality: 99
+
+params:
+  homeMetaContent: This is my blog, where I blog.
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat: Jan 2, 2006
+
+menu:
+  nav:
+    - name: Tags
+      url: /tags/
+      weight: 2
+    - name: About
+      url: /about/
+      weight: 3
+    - name: RSS
+      url: /index.xml
+      weight: 4
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
