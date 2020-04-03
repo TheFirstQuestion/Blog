@@ -4,7 +4,7 @@
 /* base */
 body {
   background-image: url('{{ "img/wallpaper.jpg" | absURL }}');
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* anchors */
